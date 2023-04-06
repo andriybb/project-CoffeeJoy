@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="wrapper">
+            <div class="categories">
+            </div>
+    <div class="goods">
+        <div class="goods-wrapper">
+            <h2 class="goods-header"></h2>
+            <div class="goods-card-wrapper"></div>
+        </div>
+    </div>
+    <div class="buy">
+        <div class="buy-wrapper"> </div>
+    </div>
+    </div>
+    <div class="popup-wrapper ">
+        <div class="popup-window">
+            <div class="contact-form">
+                <div class="popup-form">
+                    <form class="info">
+                       <div class="form-field">
+                        <label >ПІБ покупця:</label>
+                        <input class="name1" type="text" required/>
+                        <span class="error-message"></span>
+                       </div>
+                        <div class="form-field">
+                        <label for="city">Місто:</label>
+                        <select class="info2" required>
+                          <option>Виберіть місто</option>
+                          <option value="Київ">Київ</option>
+                          <option value="Харків">Харків</option>
+                          <option value="Львів">Львів</option>
+                          <option value="Одеса">Одеса</option>
+                        </select>
+                        </div>
+                        <div class="form-field">
+                        <label for="nova_poshta">Склад Нової пошти:</label>
+                      <select class="np1" name="np" id="np" required>
+                        <option > Склад нової пошти</option>
+                        <option value="Нова Пошта №1">Нова Пошта №1</option>
+                        <option value="Нова Пошта №2">Нова Пошта №2</option>
+                        <option value="Нова Пошта №3">Нова Пошта №3</option>
+                        <option value="Нова Пошта №4">Нова Пошта №4</option>
+                        <option value="Нова Пошта №5">Нова Пошта №5</option>
+                      </select>
+                        </div>
+                        <div class="form-field">
+                      <label>Спосіб оплати:</label>
+                      <div class="pay">
+                      <input class="payment" type="radio" name="payment_method" value="Післяплата" required>Післяплата</input>
+                      <input class="payment1" type="radio" name="payment_method1" value="Банківська картка" required>Банківська картка</input>
+                      </div>
+                      <span class="error-massege"></span>
+                      <div class="form-field">
+                        <label for="quantity">Кількість:</label>
+                        <input class="number" type="number" id="quantity" name="quantity" min="1" required>
+                        </div>
+                        <div class="form-field">
+                        <label for="comment">Коментар до замовлення:</label>
+                        <textarea class="comment" id="comment" name="comment"></textarea>
+                      </div>
+                      </form>    
+                      <button class="of-btn" type="submit" >Купити</button>                  
+                </div>
+              </div>
+            </div>
+         </div>
+     </div>
+ </div>
+ <script type="module" src="./js/script.js"></script>
+</body>
+</html>
+</body>
+</html>
