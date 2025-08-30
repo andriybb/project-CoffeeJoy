@@ -2,6 +2,10 @@
     padding: 64px 0;
 }
 
+.experience-container {
+    padding: 0 64px;
+}
+
 .experience-title {
     font-weight: 400;
     font-size: 36px;
@@ -23,9 +27,9 @@
 .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+    row-gap: 24px;
+    justify-content: flex-start;
+    align-content: space-between;
     margin: 0 auto;
 }
 
@@ -45,11 +49,12 @@
     .experience-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 32px;
+        row-gap: 32px;
+        column-gap: 32px;
     }
 
     .experience-item {
-        width: calc((100% - 32px)/2);    
+        width: calc((100% - 32px)/2);
     }
 }
     
@@ -64,14 +69,13 @@
         column-gap: 32px;
         row-gap: 32px;
         flex-wrap: wrap;
-        max-height: 1200px;
+        max-height: 948px;
         align-items: flex-start;
-        justify-content: flex-start;
-       
     }
 
     .experience-item {
         box-sizing: border-box;
-        width: calc((100% - 64px)/3);
+        width: 416px;
+        flex-grow: 0;
     }
 }
