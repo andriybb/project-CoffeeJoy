@@ -72,6 +72,9 @@
   border-radius: 40px;
 }
 @media (min-width: 768px) {
+  .subscribe-container {
+    align-items: start;
+  }
   .subscribe-form {
     display: flex;
     flex-direction: row;
@@ -85,5 +88,6 @@
   }
   .subscribe-container {
     flex-direction: row;
+    align-items: center;
   }
 }
