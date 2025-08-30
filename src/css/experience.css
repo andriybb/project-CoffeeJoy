@@ -63,14 +63,18 @@
     .experience-title {
         font-size: 48px;
     }
+
     .experience-list {
         flex-direction: column;
-       
-        }
+        flex-wrap: wrap;
+        max-height: 948px;
+    }
+
     .experience-item {
         box-sizing: border-box;
     }
 
-    
-  
+    .experience-item:last-child {
+        width: calc((100% - 32px)/2);
+    }  
 }
