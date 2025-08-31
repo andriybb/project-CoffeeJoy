@@ -75,13 +75,8 @@
     }
 
     .experience-list {
-        display: flex;
         flex-direction: column;
-        column-gap: 32px;
-        row-gap: 32px;
-        flex-wrap: wrap;
-        max-height: 948px;
-        align-items: flex-start;
+         max-height: 948px;
     }
 
     .experience-item {
