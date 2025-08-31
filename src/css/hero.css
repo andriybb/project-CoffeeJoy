@@ -1,0 +1,122 @@
+.hero {
+    max-width: 375px;
+    margin: auto;
+    padding-top: 108.5px;
+    padding-bottom: 108.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: 
+      url("../img/hero/hero-mobile.jpg");
+}
+
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: 
+          url("../img/hero/hero-mobile@2x.jpg");
+    }
+  }
+
+.hero-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.hero-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 256px;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    max-width: 256px;
+    margin-bottom: 32px;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5; 
+    border-radius: 100px;
+    width: 135px;
+    height: 44px;
+    align-items: center;
+    border: none;
+}
+
+/*
+background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(../img/);
+*/
+
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        padding-top: 311.5px;
+        padding-bottom: 311.5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: 
+          url("../img/hero/hero-tablet.jpg");
+    }
+    
+    @media (min-resolution: 192dpi) {
+        .hero {
+            background-image: 
+              url("../img/hero/hero-tablet@2x.jpg");
+        }
+      }
+
+      .hero-container {
+        padding-left: 32px;
+        padding-right: auto;
+    }
+
+    .hero-title {
+        max-width: 560px;
+    }
+    
+    .hero-text {
+        max-width: 560px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        max-width: 1440px;
+        padding-top: 259px;
+        padding-bottom: 259px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: 
+          url("../img/hero/hero-desk.jpg");
+    }
+    
+    @media (min-resolution: 192dpi) {
+        .hero {
+            background-image: 
+              url("../img/hero/hero-desk@2x.jpg");
+        }
+      }
+
+      .hero-container {
+        padding-left: 64px;
+        padding-right: auto;
+    }
+}
