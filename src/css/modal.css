@@ -22,7 +22,7 @@
   pointer-events: auto;
 }
 .modal {
-  min-width: 288px;
+  width: 288px;
 
   margin: 0 auto;
   align-items: center;
