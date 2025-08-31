@@ -54,6 +54,14 @@
     border: none;
 }
 
+.button:hover {
+  opacity: 0.5;
+}
+
+.button:focus {
+box-shadow: none;
+}
+
 /*
 background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
