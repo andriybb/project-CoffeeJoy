@@ -1,0 +1,37 @@
+<div class="modal-overlay" data-modal>
+  <div class="modal">
+    <button class="modal-xclose-btn" type="button" data-modal-close>
+      <svg class="modal-xclose-icon" width="16" height="16">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+    <p class="modal-text">
+      Fresh brews, special offers, and cozy updates are coming your way.
+    </p>
+
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="/img/modal/modal-min.jpg 1x, ./img/modal/modal@2x-min.jpg 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /img/modal/modal-mob-min.jpg     1x,
+          ./img/modal/modal-mob@2x-min.jpg 2x
+        "
+      />
+      <img
+        class="modal-img"
+        src="/img/modal/modal-min.jpg"
+        alt="Cup of coffee, croissant, heart-sealed envelope, and small plant on wooden table"
+        width="644"
+      />
+    </picture>
+    <button class="modal-btn-close" type="button" data-modal-close>
+      Close
+    </button>
+  </div>
+</div>

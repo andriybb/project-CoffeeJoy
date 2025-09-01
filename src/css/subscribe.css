@@ -41,7 +41,10 @@
   background: transparent;
   outline: none;
 }
-
+.subscribe-input:focus {
+  border: 1px solid rgba(111, 78, 55, 0.5);
+  box-shadow: inset 0 0 2px 2px rgb(111, 78, 55, 0.2);
+}
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -62,6 +65,13 @@
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  opacity: 0.5;
+}
+.subscribe-btn:active {
+  opacity: 1;
 }
 .subscribe-text-agree {
   font-size: 12px;
