@@ -1,0 +1,145 @@
+.location-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-wrapper {
+  margin-bottom: 32px;
+}
+
+.location-title-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+.location-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.location-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.location-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.location-item-icon {
+  margin-bottom: 16px;
+}
+
+.location-contacts-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.location-contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.location-address-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+.location-address-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #0B0803;
+  padding: 0;
+}
+
+.location-address-btn-chevron {
+  margin-left: 8px;
+}
+
+.location-map-continer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.location-map {
+  border-radius: 40px;
+  width: 100%;
+  height: 307px;
+}
+
+@media only screen and (min-width: 768px) {
+  .location-contacts-list {
+    flex-direction: row;
+  }
+
+  .location-contacts-item {
+    width: 208px;
+  }
+
+  .location-map {
+    width: 704px;
+    height: 377px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .location-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .location-wrapper {
+    width: 420px;
+    margin-bottom: 0;
+  }
+
+  .location-title {
+    font-size: 48px;
+  }
+
+  .location-contacts-list {
+    flex-direction: column;
+  }
+
+  .location-contacts-item {
+    width: 100%;
+  }
+
+  .location-map-continer {
+    width: 869px;
+  }
+
+  .location-map {
+    width: 869px;
+    height: 697px;
+  }
+}
