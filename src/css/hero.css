@@ -39,7 +39,6 @@
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
-    max-width: 256px;
     margin-bottom: 32px;
 }
 
@@ -127,4 +126,9 @@ background-image: linear-gradient(
         padding-left: 64px;
         padding-right: auto;
     }
+
+    .hero-title {
+      font-size: 56px;
+  }
+  
 }
