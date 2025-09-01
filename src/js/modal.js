@@ -20,31 +20,31 @@
 //   }
 // })();
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-open]'),
-//     closeModalBtns: document.querySelectorAll('[data-modal-close]'),
-//     modal: document.querySelector('[data-modal]'),
-//     form: document.querySelector('form'), // ⚡ ссылка на форму
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtns: document.querySelectorAll('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+    form: document.querySelector('form'), // ⚡ ссылка на форму
+  };
 
-//   refs.openModalBtn.addEventListener('click', function (event) {
-//     event.preventDefault(); // отключаем автоотправку формы
+  refs.openModalBtn.addEventListener('click', function (event) {
+    event.preventDefault(); // отключаем автоотправку формы
 
-//     // ✅ используем стандартную проверку формы
-//     if (!refs.form.checkValidity()) {
-//       refs.form.reportValidity(); // покажет встроенные подсказки браузера
-//       return; // если не валидно → не открываем модалку
-//     }
+    // ✅ используем стандартную проверку формы
+    if (!refs.form.checkValidity()) {
+      refs.form.reportValidity(); // покажет встроенные подсказки браузера
+      return; // если не валидно → не открываем модалку
+    }
 
-//     toggleModal(); // если форма валидна → открываем
-//   });
+    toggleModal(); // если форма валидна → открываем
+  });
 
-//   refs.closeModalBtns.forEach(btn => {
-//     btn.addEventListener('click', toggleModal);
-//   });
+  refs.closeModalBtns.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
 
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-open');
-//   }
-// })();
+  function toggleModal() {
+    refs.modal.classList.toggle('is-open');
+  }
+})();
