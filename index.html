@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-CoffeeJoy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-no02elxS.css">
+    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-BwUNRun4.css">
   </head>
   <body>
     
@@ -49,7 +49,7 @@
             required
           />
         </label>
-        <button class="subscribe-btn" type="submit">
+        <button class="subscribe-btn" type="submit" data-modal-open>
           Subscribe
           <svg class="subscribe-btn-icon" width="13" height="12" fill="#ffffff">
             <use href="../img/icons.svg#icon-sub"></use>
@@ -88,5 +88,40 @@
       
     </main>
     
+    <div class="modal-overlay" data-modal>
+  <div class="modal">
+    <button class="modal-xclose-btn" type="button" data-modal-close>
+      <svg class="modal-xclose-icon" width="16" height="16">
+        <use href="/project-CoffeeJoy/assets/icons-DoG3ZwrB.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+    <p class="modal-text">
+      Fresh brews, special offers, and cozy updates are coming your way.
+    </p>
+
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-CoffeeJoy/assets/modal-min-DAVa6Zf_.jpg 1x, /project-CoffeeJoy/assets/modal@2x-min-DRpl01Ps.jpg 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="/project-CoffeeJoy/assets/modal-mob-min-7wAQv4Hb.jpg 1x, /project-CoffeeJoy/assets/modal-mob@2x-min-BJEkxWz2.jpg 2x"
+      />
+      <img
+        class="modal-img"
+        src="/project-CoffeeJoy/assets/modal-min-DAVa6Zf_.jpg"
+        alt="Cup of coffee, croissant, heart-sealed envelope, and small plant on wooden table"
+        width="644"
+      />
+    </picture>
+    <button class="modal-btn-close" type="button" data-modal-close>
+      Close
+    </button>
+  </div>
+</div>
+
   </body>
 </html>
