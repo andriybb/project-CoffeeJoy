@@ -1,4 +1,5 @@
 .mobile-menu {
+  background-color: #e0cbb4;
   position: fixed;
   top: 0;
   right: 0;
@@ -18,6 +19,7 @@
 
 
 .mobile-menu-container {
+  display: flex;
   position: relative;
   padding-bottom: 54px;
   padding-top: 72px;
@@ -27,9 +29,16 @@
   height: 100%;
 }
 
+.header-mobile-menu-logo{
+  position: absolute;
+  top: 18px;
+  left: 16px;
+
+}
 .mobile-menu-close {
   background-color: transparent;
   border: none;
+  box-shadow: 0;
   position: absolute;
   top:26px ;
   right:16px ;
