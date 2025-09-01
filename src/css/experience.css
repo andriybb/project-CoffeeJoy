@@ -31,20 +31,21 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    width: 100%;
     justify-content: flex-start;
-    align-content: space-between;
     margin: 0 auto;
 }
 
 .experience-item {
     flex-grow: 1;
+    width: 100%;
 }
 
 .experience-image {
     display: block;
     border-radius: 32px;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
