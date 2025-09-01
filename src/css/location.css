@@ -86,11 +86,12 @@
 .location-map-continer {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .location-map {
   border-radius: 40px;
-  width: 288px;
+  width: 100%;
   height: 307px;
 }
 
@@ -112,11 +113,12 @@
 @media only screen and (min-width: 1440px) {
   .location-container {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .location-wrapper {
+    width: 420px;
     margin-bottom: 0;
   }
 
@@ -130,6 +132,10 @@
 
   .location-contacts-item {
     width: 100%;
+  }
+
+  .location-map-continer {
+    width: 869px;
   }
 
   .location-map {
