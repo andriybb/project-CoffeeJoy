@@ -37,6 +37,16 @@
   gap: 40px;
 }
 
+.location-contacts-link {
+  transition: transform, color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-contacts-link:hover,
+.location-contacts-link:focus {
+  transform: scale(1.1);
+  color: #ffff;
+}
+
 .location-item-icon {
   margin-bottom: 16px;
 }
@@ -74,7 +84,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #0B0803;
+  color: #0b0803;
   padding: 0;
 }
 
