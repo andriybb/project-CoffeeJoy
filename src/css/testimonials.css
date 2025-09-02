@@ -2,6 +2,26 @@
   padding-top: 64px;
   padding-bottom: 64px;
 }
+#scrollToTop {
+  display: none;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 24px;
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTop:hover {
+  opacity: 1;
+}
 .testimonials-title {
   font-weight: 400;
   font-size: 36px;
