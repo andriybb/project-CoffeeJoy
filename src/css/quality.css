@@ -1,0 +1,127 @@
+.quality {
+  padding: 64px;
+  box-sizing: border-box;
+}
+
+.quality-title,
+.quality-subtitle {
+  text-align: center;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.quality-title {
+  font-family: Aboreto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -1px;
+}
+
+.quality-subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  color: #555;
+}
+
+.quality-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.quality-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.img-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.text-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 32px;
+}
+
+.quality-item h3 {
+  font-family: Quicksand;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.quality-item p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .quality-item:nth-child(1),
+  .quality-item:nth-child(2) {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .quality-item:nth-child(3) {
+    flex: 0 0 100%;
+  }
+
+  .quality-item .img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .quality-item:nth-child(3) .img-wrapper img {
+    height: 700px;
+  }
+
+  .text-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1158px) {
+  .quality-item {
+    flex: 0 0 calc(33.333% - 16px);
+  }
+
+  .quality-item .img-wrapper img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .text-wrapper {
+    max-width: 421px;
+  }
+}
