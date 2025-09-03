@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-CoffeeJoy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-DC4PcQvh.css">
+    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-TlxdCdcW.css">
   </head>
   <body>
     <header class="header">
@@ -303,8 +303,11 @@
             name="email"
             id="email-subscribe"
             placeholder="Your Email Here"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
           />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
         </label>
         <button class="subscribe-btn" type="submit" data-modal-open>
           Subscribe
