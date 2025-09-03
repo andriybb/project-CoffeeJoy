@@ -8,8 +8,6 @@
 }
 
 .text-container {
-    /* width: 288px;
-    height: 563px; */
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -88,19 +86,19 @@
 
 .img-welcome picture,
 .img-welcome img {
-    display: block;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;       
+    object-fit: cover;  
     border-radius: 40px;
-}
+    display: block;
+    }
 
 
 @media (min-width: 768px) and (max-width: 1439px) {
     .title-welcome {
         line-height: 1.2;
-        max-width: 336px; /* ИСПРАВЛЕНО: ограничиваем ширину */
-        margin: 0 auto; /* если нужно центрировать */
+        max-width: 336px; 
+        margin: 0 auto; 
         text-align: left;
     }
 
@@ -124,11 +122,11 @@
         min-height: 265px;
     }
 
-    .img-welcome picture,
+    /* .img-welcome picture,
     .img-welcome img  {
         margin-top: 32px;
     
-    }
+    } */
 
     .location-btn {
         width: 181px;
@@ -166,9 +164,9 @@
 
 
 
-    .img-welcome {
+    /* .img-welcome {
         flex: 1 1 50%;
-    }
+    } */
 
     .location-btn {
         width: 181px;
