@@ -2,6 +2,24 @@
   padding-top: 64px;
   padding-bottom: 64px;
 }
+#scrollToTop {
+  display: none;
+
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTop:hover {
+  opacity: 1;
+}
+.testimonials-svg-up {
+  fill: #6f4e37;
+}
 .testimonials-title {
   font-weight: 400;
   font-size: 36px;
