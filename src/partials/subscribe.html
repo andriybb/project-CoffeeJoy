@@ -15,8 +15,11 @@
             name="email"
             id="email-subscribe"
             placeholder="Your Email Here"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
           />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
         </label>
         <button class="subscribe-btn" type="submit" data-modal-open>
           Subscribe
