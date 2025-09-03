@@ -1,8 +1,8 @@
-<section class="Welcome">
+<section class="Welcome-section">
     <div class="container welcome-container">
         <div class="text-container">
             <div class="text-inner">
-                <div class="headdings">
+                <div class="headings">
                     <h1 class="headline-welcome">Welcome</h1>
                     <h2 class="title-welcome">Our Journey: Passion for Quality Coffee</h2>
                 </div>
@@ -11,7 +11,7 @@
                     <a href="#location" class="location-btn">
                         <span class="text-button">Find location</span>
                         <svg class="icon-location" width="24" height="24" fill="#ffffff">
-                            <use href="../img/icons.svg#icon-pin"></use>
+                            <use href="/img/icons.svg#icon-pin"></use>
                         </svg>
                     </a>
                 </div>
@@ -19,41 +19,33 @@
         </div>
         <div class="img-welcome">
             <picture>
-                <!-- Десктоп ≥1440px -->
                 <source
                 media="(min-width: 1440px)"
                 srcset="
-                    ../img/welcome/welcome.jpg 1x,
-                    ../img/welcome/welcome@2x.jpg 2x
+                    /img/welcome/welcome.webp 1x,
+                    /img/welcome/welcome@2x.webp 2x
                 "
                 type="image/jpeg"
                 >
-
-                <!-- Планшет ≥768px -->
                 <source
                 media="(min-width: 768px)"
                 srcset="
-                    ../img/welcome/tablet-welcome.jpg 1x,
-                    ../img/welcome/tablet-welcome@2x.jpg 2x
+                    /img/welcome/tablet-welcome.webp 1x,
+                    /img/welcome/tablet-welcome@2x.webp 2x
                 "
                 type="image/jpeg"
                 >
-
-                <!-- Мобильные <768px -->
                 <source
                 media="(max-width: 767px)"
                 srcset="
-                    ../img/welcome/mobile-welcome.jpg 1x,
-                    ../img/welcome/mobile-welcome@2x.jpg 2x
+                    /img/welcome/mobile-welcome.webp 1x,
+                    /img/welcome/mobile-welcome@2x.webp 2x
                 "
                 type="image/jpeg"
                 >
-
-                <!-- Fallback -->
                 <img
-                src="../img/welcome/welcome.jpg"
+                src="/img/welcome/welcome.webp"
                 alt="The process of making coffee"
-                loading="lazy"
                 >
             </picture>
 
