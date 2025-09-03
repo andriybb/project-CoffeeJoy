@@ -6,21 +6,19 @@
   display: none;
 
   position: fixed;
+  z-index: 10;
   bottom: 20px;
   right: 20px;
-  padding: 10px 15px;
-  font-size: 24px;
-  background-color: #6f4e37;
-  color: white;
-  border: none;
-  border-radius: 40px;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
 #scrollToTop:hover {
   opacity: 1;
+}
+.testimonials-svg-up {
+  fill: #6f4e37;
 }
 .testimonials-title {
   font-weight: 400;
