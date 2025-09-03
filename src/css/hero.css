@@ -58,14 +58,6 @@
   box-shadow: none;
 }
 
-/*
-background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),
-  url(../img/);
-*/
-
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
