@@ -20,12 +20,12 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-CoffeeJoy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-BNtWvGfm.css">
+    <link rel="stylesheet" crossorigin href="/project-CoffeeJoy/assets/index-CRhz5w_U.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
-    <a href="index.html" class="header-logo">
+    <a href="index.html" class="header-logo" aria-label="logo coffe joe">
       <img class="header-logo-svg" src="/project-CoffeeJoy/assets/logo-DX2jM1Le.svg" alt="coffee joy" />
     </a>
 
@@ -59,18 +59,16 @@
 
 
     <main>
-      <section id="hero" class="hero">
-  <div class="container hero-container">
-    <h1 class="hero-title">Savor the Essence of Specialty Coffee</h1>
-    <p class="hero-text">
-      At CoffeeJoy, we believe every cup tells a story. Join us in exploring the
-      rich flavors and aromas of our carefully curated coffee selections.
-    </p>
-    <a href="#quality">
-      <button type="button" class="button">Learn More</button>
-    </a>
-  </div>
+      
+<section class="hero">
+    <div class="container hero-container">
+        <h1 class="hero-title">Savor the Essence of Specialty Coffee</h1>
+        <p class="hero-text">At CoffeeJoy, we believe every cup tells a story. Join us in exploring the rich flavors and aromas of our carefully curated coffee selections.</p>
+        <a href="#quality" class="hero-btn">
+        <span class="text-hero-btn">Learn More</span></a>
+        </div>
 </section>
+
 
       <section class="Welcome-section">
     <div class="container welcome-container">
@@ -411,8 +409,8 @@
             placeholder="Your Email Here"
             required
           />
-          <p class="text-valid">Success!</p>
-          <p class="text-invalid">Invalid email, try again</p>
+          <a class="text-valid">Success!</a>
+          <a class="text-invalid">Invalid email, try again</a>
         </label>
         <button class="subscribe-btn" type="submit" data-modal-open>
           Subscribe
@@ -708,46 +706,46 @@
       <p class="location-title-text">Find</p>
       <h2 class="location-title">Location</h2>
       <p class="location-description">Visit us at our cozy coffee shop!</p>
-      <ul class="location-contacts-list">
-        <li class="location-contacts-item">
-          <svg class="location-item-icon" width="32" height="32">
-            <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-envelope"></use>
-          </svg>
-          <h4 class="location-contacts-title">Email</h4>
-          <a href="mailto:hello@coffeejoy.com" class="location-contacts-link"
-            >hello@coffeejoy.com</a
-          >
-        </li>
-        <li class="location-contacts-item">
-          <svg class="location-item-icon" width="32" height="32">
-            <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-phone"></use>
-          </svg>
-          <h4 class="location-contacts-title">Phone</h4>
-          <a href="tel:+1 (555) 123-5321" class="location-contacts-link"
-            >+1 (555) 123-5321</a
-          >
-        </li>
-        <li class="location-contacts-item">
-          <svg class="location-item-icon" width="32" height="32">
-            <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-map"></use>
-          </svg>
-          <h4 class="location-contacts-title">Office</h4>
-          <p class="location-address-text">
-            263 Newbury St, Boston, MA 02116, USA
-          </p>
-          <a
-            href="https://maps.app.goo.gl/T2CJoAhS5mHXiKmU9"
-            class="location-address-link"
-          >
-            <button class="location-address-button">
+      <address class="location-contacts">
+        <ul class="location-contacts-list">
+          <li class="location-contacts-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-envelope"></use>
+            </svg>
+            <h3 class="location-contacts-title">Email</h3>
+            <a href="mailto:hello@coffeejoy.com" class="location-contacts-link"
+              >hello@coffeejoy.com</a
+            >
+          </li>
+          <li class="location-contacts-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-phone"></use>
+            </svg>
+            <h3 class="location-contacts-title">Phone</h3>
+            <a href="tel:+1 (555) 123-5321" class="location-contacts-link"
+              >+1 (555) 123-5321</a
+            >
+          </li>
+          <li class="location-contacts-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-location-map"></use>
+            </svg>
+            <h3 class="location-contacts-title">Office</h3>
+            <p class="location-address-text">
+              263 Newbury St, Boston, MA 02116, USA
+            </p>
+            <a
+              href="https://maps.app.goo.gl/T2CJoAhS5mHXiKmU9"
+              class="location-address-button"
+            >
               Get Directions
               <svg class="location-address-btn-chevron" width="24" height="24">
                 <use href="/project-CoffeeJoy/assets/icons-DQqPAyjF.svg#icon-chevron-right"></use>
               </svg>
-            </button>
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
     <div class="location-map-continer">
       <iframe
