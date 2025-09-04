@@ -1,0 +1,160 @@
+.subscribe {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.subscribe-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 24px;
+}
+
+.subscribe-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin-bottom: 32px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.subscribe-label {
+  width: 100%;
+}
+.subscribe-input {
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input:focus {
+  border: 1px solid rgba(111, 78, 55, 0.5);
+  box-shadow: inset 0 0 2px 2px rgb(111, 78, 55, 0.2);
+}
+
+.subscribe-input:not(:placeholder-shown):invalid {
+  border-color: red;
+  box-shadow: inset 0 0 2px 2px rgba(197, 26, 26, 0.2);
+}
+
+.subscribe-input:not(:placeholder-shown):valid {
+  border-color: green;
+  box-shadow: inset 0 0 2px 2px rgba(21, 193, 32, 0.2);
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.subscribe-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.subscribe-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #6f4e37;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  opacity: 0.5;
+}
+.subscribe-btn:active {
+  opacity: 1;
+}
+
+.subscribe-text-agree {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.subscribe-img {
+  border-radius: 40px;
+}
+@media (min-width: 768px) {
+  .subscribe-container {
+    align-items: start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+  .subscribe-label {
+    width: 340px;
+  }
+  .subscribe-input {
+    height: 44px;
+  }
+  .subscribe-btn {
+    width: 158px;
+  }
+  .subscribe-img {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .subscribe-box {
+    width: 640px;
+  }
+  .subscribe-title {
+    font-size: 48px;
+  }
+  .subscribe-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribe-form {
+    gap: 16px;
+  }
+}
