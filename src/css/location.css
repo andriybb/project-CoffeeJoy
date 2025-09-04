@@ -1,6 +1,9 @@
-.location-container {
+.location {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+.location-container {
   display: flex;
   flex-direction: column;
 }
@@ -49,6 +52,10 @@
 
 .location-item-icon {
   margin-bottom: 16px;
+}
+
+.location-contacts {
+  font-style: normal;
 }
 
 .location-contacts-title {
