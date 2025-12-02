@@ -25,3 +25,4 @@ pullrequests-list.txt
 *.njsproj
 *.sln
 *.sw?
+.env
